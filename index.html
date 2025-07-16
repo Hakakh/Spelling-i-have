@@ -324,7 +324,7 @@
                 if (userInput) userInput.value = '';
                 if (hint) hint.textContent = '';
                 if (result) result.textContent = '';
-                if (completion) completion.textContent = `Completed: ${state.completedCount}/50`;
+                if (completion) completion.textContent = `Completed: ${state.completedCount}/58`;
                 playPhrase();
                 startAutoPlay();
             }
@@ -397,7 +397,7 @@
                 <button id="checkButton">Check Answer</button>
                 <button id="hintButton">Hint</button>
                 <button id="resetButton">Reset Game</button>
-                <p id="completion">Completed: 0/50</p>
+                <p id="completion">Completed: 0/58</p>
                 <p id="hint"></p>
                 <p id="result"></p>
             `;
@@ -434,7 +434,7 @@
             startAutoPlay();
         }
 
-        // Hàm reset game (đã sửa lỗi)
+        // Hàm reset game
         function resetGame() {
             stopAutoPlay();
             state.phrases = shuffleArray(phrases); // Khởi tạo lại danh sách câu đã xáo trộn
